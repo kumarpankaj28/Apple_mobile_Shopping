@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addItem,delItem } from '../Redux/actions/index.js';
 import DATA from "../Data";
@@ -10,7 +10,7 @@ const ProductDetail = () => {
     const proid = useParams();
     const proDetail = DATA.filter(x=>x.id == proid.id)
     const product = proDetail[0];
-    console.log(product);
+    // console.log(product);
 
     // We need to store useDispatch in a varialble
     const dispatch = useDispatch();
@@ -27,12 +27,9 @@ const ProductDetail = () => {
     }
 
 
-
-
-
   return (
     <>
-        <div className="container my-5 py-3">
+        <div className="container my-5 py-3"  >
             <div className="row">
                 <div className="col-md-6 d-flex justify-content-center mx-auto product">
                     <img src={product.img} alt={product.title} height="400px" />

@@ -1,10 +1,12 @@
 import React from "react";
+import AboutHome from "./AboutHome";
+import Slider from "./carousel/Slider";
 import Product from "./Product";
 
 const Home = () => {
   return (
     <>
-      <div
+      {/* <div
         id="carouselExampleIndicators"
         className="carousel slide"
         data-bs-ride="carousel"
@@ -39,16 +41,17 @@ const Home = () => {
         </div>
         <div className="carousel-inner ">
           <div className="carousel-item active">
-            <img src="/assets/images/home/img3.jpg" className="d-block w-100" alt="IPhone" />
+            <img src="/assets/images/home/banner-1.jpg" className="d-block w-100 " alt="IPhone" />
+            
           </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img4.jpg" className="d-block w-100" alt="IPhone" />
+            <img src="/assets/images/home/banner-3.jpg" className="d-block w-100" alt="IPhone" />
           </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img2.jpg" className="d-block w-100" alt="IPhone" />
+            <img src="/assets/images/home/banner-4.jpg" className="d-block w-100" alt="IPhone" />
           </div>
           <div className="carousel-item">
-            <img src="/assets/images/home/img1.jpg" className="d-block w-100" alt="IPhone" />
+            <img src="/assets/images/home/banner-5.jpg" className="d-block w-100" alt="IPhone" />
           </div>
         </div>
         <button
@@ -69,7 +72,9 @@ const Home = () => {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually">Next</span>
         </button>
-      </div>
+      </div> */}
+      <Slider/>
+      <AboutHome/>
       <Product/>
     </>
   );

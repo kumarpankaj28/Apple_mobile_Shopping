@@ -9,6 +9,9 @@ import { Navigate, Routes, Route } from "react-router-dom";
 import ProductDetail from "./components/ProductDetail";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
+import Services from "./components/Services";
+
+
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services/>} />
         <Route path="/product" element={<Product />} />
         <Route path="/products/:id" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
